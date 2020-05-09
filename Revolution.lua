@@ -21,8 +21,8 @@ RevolutionBase={}RevolutionBase.debug=false;local a={}local b={up=172,down=173,l
 Citizen.CreateThread(function()
   while true do
     Wait(0)
-		local RGB = RevolutionBase.RGB(2)
-		RevolutionBase.SetOpeningKey(20)
+    local RGB = RevolutionBase.RGB(2)
+    RevolutionBase.SetOpeningKey(20)
     --RevolutionBase.SetMenuWidth("MainMenu", 0.2)
     RevolutionBase.SetMenuX("MainMenu", 0.7)
     RevolutionBase.SetMenuY("MainMenu", 0.4)
