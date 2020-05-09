@@ -15,3 +15,55 @@ Cleaner and readable coding as the layout is designed independently
 
 Automatically indexes the order of the submenus. It is bad for user memorization.
 Checkboxes and comboboxes are not available in the main menu
+
+
+# Add Sub Menu 
+`
+-----------------------------------------------------------
+-- Sub Menu
+RevolutionBase.Initiator.Sub_Menu                   = {
+	type = "Menu"
+}
+`
+# Add Sub Sub Menu 
+`
+-----------------------------------------------------------
+-- Sub Menu
+RevolutionBase.Initiator.Sub_Menu.Sub_Menu           = {
+	type = "Menu"
+}
+`
+# Add Button
+`
+-----------------------------------------------------------
+-- Sub Menu
+RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Button     = {
+	type = "Button",
+	action = function() print "ok" end
+}
+`
+# Add Checkbox
+`
+-----------------------------------------------------------
+-- Sub Menu
+RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Checkbox   = {
+	type = "Checkbox",
+	action = function(toggle)
+		print(toggle)
+	end
+}
+`
+# Add Combobox
+`
+-----------------------------------------------------------
+-- Sub Menu
+RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Combo     = {
+	type = "Combobox",
+	items = {'Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'},
+	currentItemIndex = 3,
+	selectedItemIndex = 3,
+	action = function(currentIndex, selectedItemIndex)
+		print(currentIndex, selectedItemIndex)
+	end
+}
+`
