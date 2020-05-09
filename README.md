@@ -18,32 +18,32 @@ Checkboxes and comboboxes are not available in the main menu
 
 
 # Add Sub Menu 
-`
+```lua
 -----------------------------------------------------------
 -- Sub Menu
 RevolutionBase.Initiator.Sub_Menu                   = {
 	type = "Menu"
 }
-`
+```
 # Add Sub Sub Menu 
-`
+```lua
 -----------------------------------------------------------
 -- Sub Menu
 RevolutionBase.Initiator.Sub_Menu.Sub_Menu           = {
 	type = "Menu"
 }
-`
+```
 # Add Button
-`
+```lua
 -----------------------------------------------------------
 -- Sub Menu
 RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Button     = {
 	type = "Button",
 	action = function() print "ok" end
 }
-`
+```
 # Add Checkbox
-`
+```lua
 -----------------------------------------------------------
 -- Sub Menu
 RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Checkbox   = {
@@ -52,9 +52,9 @@ RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Checkbox   = {
 		print(toggle)
 	end
 }
-`
+```
 # Add Combobox
-`
+```lua
 -----------------------------------------------------------
 -- Sub Menu
 RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Combo     = {
@@ -66,4 +66,4 @@ RevolutionBase.Initiator.Sub_Menu.Sub_Menu.Combo     = {
 		print(currentIndex, selectedItemIndex)
 	end
 }
-`
+```
